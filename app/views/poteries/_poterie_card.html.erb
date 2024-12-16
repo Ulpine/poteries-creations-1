@@ -1,0 +1,19 @@
+<div class="card-poterie rounded-4 p-2">
+  <div class="card-img-top rounded-top-4", style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path poterie.photo.key, height: 300, crop: :fill %>')">
+  </div>
+  <div class="card-body">
+    <div class="card-title m-3">
+      <div class="btn btn-primary mb-3">
+        <%= link_to "Détails", potery_path(poterie), class: "text-decoration-none text-reset" %>
+        </div>
+      <h4><%= poterie.technique.capitalize %></h4>
+    </div>
+    <div class="card-text p-3 row justify-content-center">
+     <i class="fa-solid fa-quote-left"> </i><%= poterie.description %>
+     <br>
+    </div>
+    <div class="card-footer">
+      <i class="fa-solid fa-palette"></i> <%= poterie.artiste %>
+    </div>
+  </div>
+</div>

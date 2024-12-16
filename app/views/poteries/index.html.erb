@@ -1,0 +1,71 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-poterie">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <%= image_tag 'PoterieCreation.jpg' %>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Acueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Qui sommes nous?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nos réalisations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <!--li class="nav-item"-->
+                <!--/li-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="banner"
+    style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= asset_path 'main1.jpg' %>)">
+    <div class="container">
+        <h1>Poterie Création</h1>
+        <p>Lieux de rencontre.</p>
+    </div>
+</div>
+
+<div class="container my-3">
+    <div class="presentation">
+        <p>Poterie Création est une association composée de passionnés par l'art de la poterie. Nous nous réunissons
+            plusieurs fois par semaine pour partager notre amour de la création céramique et apprendre ensemble.
+            Notre groupe est basé sur l'entraide et la convivialité, chacun apportant ses compétences et son
+            savoir-faire. Nous explorons et pratiquons différentes techniques de poterie, telles que le raku, la
+            faïence, le grès, et bien d'autres encore. Notre objectif est de créer un espace où les amateurs,
+            débutants ou expérimentés, peuvent développer leur créativité tout en apprenant et en s'amusant.</p>
+        <%= image_tag 'photo accueil steps' %>
+    </div>
+
+      <div class="d-flex justify-content-center align-items-center my-5">
+        <div class="cards-new-form justify-content-between">
+          <% @poteries.each do |poterie| %>
+            <%= render "poterie_card", poterie: poterie %>
+          <% end %>
+        </div>
+      </div>
+
+
+    <div class="reseaux">
+        <h3>Suivez notre actualité sur nos réseaux sociaux </i></h3>
+        <h2>
+            <a href="https://www.instagram.com/poterie_creationsbruz?igsh=cHl2M2JpemRoaDI3" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/18Yw6rktqJ/?mibextid=LQQJ4d" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+        </h2>
+
+
+    </div>
+
+</div>
+</body>
+
+</html>

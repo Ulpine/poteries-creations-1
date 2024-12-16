@@ -1,5 +1,34 @@
 // Import your components CSS files here.
 @import "alert";
 @import "avatar";
+@import "banner";
+@import "card";
 @import "form_legend_clear";
 @import "navbar";
+
+.presentation {
+  display: flex;
+  margin-top: 40px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    border-radius: 7px;
+  padding: 10px;
+  align-items: center;
+}
+
+.presentation img {
+  height: 300px;
+  width: 300px;
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.presentation p {
+  text-align: justify;
+  margin-right: 20px;
+}
+
+.reseaux {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
